@@ -45,14 +45,3 @@ class Subscribe(unittest.TestCase):
         assert prestashop_alert_text == expected_text
 
 
-"""
-La XPATH in primul folosim xpath relativ, si nu xpath absolut
-La XPATH relativ intotdeauna incepem cautarea cu //
-La orice cautare cu XPATH incepem intotdeauna cu tag-ul elementului pe care il cautam pus dupa //
-Daca rezultatul nu este unic, vom face o rafinare a cautarii prin perechi de tipul atribut = valoare
-Cautarea de tip atribut = valoare intotdeauna se va specifica intre paranteze patrate
-Doar la XPATH atributul trebuie sa fie intotdeauna precedat de @. Deci un exemplu de cautare ar 
-            fi: //*[@atribut=valore] sau daca ne intereseaza un tag specific scriem //tag[@atribut=valoare]
-            * inseamna ca ne intereseaza toate elementele care au perechea atribut=valoare specificata
-            intre paranteze, indiferent pe ce tag se afla
-"""
